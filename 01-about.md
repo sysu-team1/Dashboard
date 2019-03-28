@@ -1,4 +1,3 @@
-## About
 ---
 layout: default
 title: 关于项目
