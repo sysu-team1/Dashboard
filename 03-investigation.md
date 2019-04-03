@@ -21,7 +21,7 @@
 
 #### 2.2.1 优帮
 - 以下是优帮的界面显示
-
+![images/youbang.jpg](https://github.com/sysu-team1/Dashboard/blob/gh-pages/images/youbang.jpg?raw=true)
 - 目标人群：面向广大社会成员
 - 产品定位：主要是广大社会成员之间的互帮互助
 - 设计特色：主要活动分类为：娱乐理财、商务办公、感情陪护、金融理财、其他（寻人、捐助、寻物、活动）
@@ -31,7 +31,7 @@
 
 #### 2.2.2 万圈
 - 以下是万圈的界面显示
-
+![/images/wanquan.jpg](https://github.com/sysu-team1/Dashboard/blob/gh-pages/images/wanquan.jpg?raw=true)
 - 目标人群：面向北京的各所高校以及社会组织
 - 产品定位：主要是一些科研与职业之类的信息
 - 设计特色：主要活动分类为：招聘、找人、校友、项目、资源等，感觉就像是领英中添加了一个需求互助
@@ -44,6 +44,9 @@
 ##### 2.2.3.1 华农校园互助
 ##### 2.2.3.2 互助校园
 - 以上两个较为类似，所以合并为一个进行描述
+- 界面显示如下：
+
+![/images/xiaochengxv.jpg](https://github.com/sysu-team1/Dashboard/blob/gh-pages/images/xiaochengxv.jpg?raw=true)
 - 目标人群：一个区域范围（学校）内的大学生
 - 产品定位：面向大学生互助有偿的小程序
 - 设计特色：简介明了，页面功能清晰简单
