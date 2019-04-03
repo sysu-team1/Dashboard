@@ -18,3 +18,5 @@ layout: default
     - 6.5 [System Sequence Diagram]()
     - 6.6 [Supplementary Requirements ]()
 * 7、Design 设计
+* 8、X1 meet_recording
+    — [Inception meeting (2019/04/02)](meeting_records/meeting_1)
