@@ -7,7 +7,7 @@
 
 | 成员ID | 学号 | 姓名 |工作 | 宣言 |
 | :------: | :------: | :------: | :------ | :------ |
-| [626zdysdq](https://github.com/626zdysdq) | 16340314 | ZDY |- 项目经理<br> - UI设计师|  |
+| [626zdysdq](https://github.com/626zdysdq) | 16340314 | ZDY |- 项目经理<br> - UI设计师| 救救孩子吧！！ |
 | [liangyy75](https://github.com/liangyy75) | 16340134 | LYY | -后台工程师:负责后台开发建设，如处理数据和响应前台<br>- DevOps工程师:负责小程序环境部署 | wtf ≤ 5 | 
 | [sanfengliao](https://github.com/sanfengliao) | 16340136 | LSF | -全栈工程师<br>- 系统架构师| |
 | [Runner1014](https://github.com/Runner1014) | 16340137 | LZY | - 后台工程师<br> - QA工程师| “想在一起，干在一起”-十九大报告词 |
