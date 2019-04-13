@@ -35,6 +35,7 @@ layout: default
     - 8.4 [部署文档]()
 * X1 meet_recording
     - [Inception meeting (2019/04/02)](meeting_records/meeting_1)
+    - [Inception meeting (2019/04/11)](meeting_records/meeting_2)
 * [X2 Tech/Work Report]()
 * [X3 Final Report]()
 * XX 建模练习
