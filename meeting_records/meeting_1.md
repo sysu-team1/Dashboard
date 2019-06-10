@@ -50,4 +50,4 @@
 
 ![meeting1](https://github.com/sysu-team1/Dashboard/blob/gh-pages/images/meeting_1.png?raw=true)
 
-### [石墨文档](https://shimo.im/docs/lYeeniQ9nXMGEFtd)
+[石墨文档](https://shimo.im/docs/lYeeniQ9nXMGEFtd)
