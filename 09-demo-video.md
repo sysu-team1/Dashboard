@@ -19,7 +19,7 @@ title: 成品展示
 # 成品展示
 
 ## 1. 登陆注册 短视频
-![登陆注册](https://github.com/sysu-team1/Dashboard/blob/gh-pages/images/%E6%9F%A5%E7%9C%8B%E4%BB%BB%E5%8A%A1.gif?raw=true)
+![登陆注册](https://github.com/sysu-team1/Dashboard/blob/gh-pages/images/%E6%B3%A8%E5%86%8C.gif?raw=true)
 
 ## 2. 发布问卷 并扣除金币 短视频
 ![发问卷](https://github.com/sysu-team1/Dashboard/blob/gh-pages/images/%E5%8F%91%E9%97%AE%E5%8D%B7.gif?raw=true)
@@ -40,4 +40,4 @@ title: 成品展示
 ![接收问卷并完成](https://github.com/sysu-team1/Dashboard/blob/gh-pages/images/%E5%A1%AB%E9%97%AE%E5%8D%B7.gif?raw=true)
 
 ## 8. 查看正在进行、已完成、过期以及自己发布的任务 短视频
-![查看正在进行、已完成、过期以及自己发布的任务]()
+![查看正在进行、已完成、过期以及自己发布的任务](https://github.com/sysu-team1/Dashboard/blob/gh-pages/images/%E6%9F%A5%E7%9C%8B%E4%BB%BB%E5%8A%A1.gif?raw=true)
