@@ -167,9 +167,9 @@ _<span class="hljs-selector-tag"><span class="hljs-selector-tag">self</span></sp
 }</code></pre> 
 <hr>
 <div name="标点规范" data-unique="标点规范"></div><h2>标点规范</h2> 
-<p>1. JS语句无需以分号结束，统一省略分号<br>2. JS中一致使用反引号 ``或单引号' ' , 不使用双引号。<br>3. WXML、CSS、JSON中均应使用双引号。<br>4. CSS属性中冒号中后面用一个空格分隔开。<br>5. 执行一致的缩进（4个空格）<br>6. 执行一致的换行样式（'unix'）</p><hr class="content-copyright" style="margin-top:50px"><blockquote class="content-copyright" style="font-style:normal"></div>
-
-
+<p>1. JS语句无需以分号结束，统一省略分号<br>2. JS中一致使用反引号 ``或单引号' ' , 不使用双引号。<br>3. WXML、CSS、JSON中均应使用双引号。<br>4. CSS属性中冒号中后面用一个空格分隔开。<br>5. 执行一致的缩进（4个空格）<br>6. 执行一致的换行样式（'unix'）</p>
+<hr>
+<div name="其他规范" data-unique="其他规范"></div>
 <h2>其他规范</h2> 
 
 <p>1. 变量与方法尽量使用驼峰式命名，并且注意避免使用 **$** 开头。 以 **$** 开头的标识符为**WePY**框架的内建属性和方法，可在**JavaScript**脚本中以 **this.** 的方式直接使用。具体请参考[API文档](https://tencent.github.io/wepy/document.html#/api?id=api)。
