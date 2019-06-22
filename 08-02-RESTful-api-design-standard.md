@@ -72,9 +72,33 @@ https://api.example.com/v1/
 
 另一种做法是，将版本号放在HTTP头信息中，但不如放入URL方便和直观。[Github](https://developer.github.com/v3/media/#request-specific-version)采用这种做法。
 
+还有一种做法是通过媒体类型指定版本信息：
+
+```
+Accept: application/vnd.example.com.v1+json
+```
+
+其中 `vnd` 表示 `Standards Tree` 标准树类型，有三个不同的树: `x`，`prs` 和 `vnd`。你使用的标准树需要取决于你开发的项目
+
+- 未注册的树（`x`）主要表示本地和私有环境
+- 私有树（`prs`）主要表示没有商业发布的项目
+- 供应商树（`vnd`）主要表示公开发布的项目
+
+> 后面几个参数依次为应用名称（一般为应用域名）、版本号、期望的返回格式。
+
+至于具体把版本号放在什么地方，这个问题一直存在很大的争议，但由于我们大多数时间都在使用 `Laravel` 开发，`应该` 使用 [dingo/api](https://github.com/dingo/api) 来快速构建应用，它采用第二种方式来管理 `API` 版本，并且已集成了标准的 `HTTP Response`
+
 ##### 路径（Endpoint）
 
-路径又称"终点"（endpoint），表示API的具体网址。
+路径又称"终点"（endpoint），表示API的具体网址，必需遵守一下规范：
+
+- URL 的命名 `必须` 全部小写
+- URL 中资源（`resource`）的命名 `必须` 是名词，并且 `必须` 是复数形式
+- `必须` 优先使用 `Restful` 类型的 URL
+- URL `必须` 是易读的
+- URL `一定不可` 暴露服务器架构
+
+>  至于 URL 是否必须使用连字符（`-`） 或下划线（`_`），不做硬性规定，但 `必须` 根据团队情况统一一种风格。
 
 在RESTful架构中，每个网址代表一种资源（resource），所以网址中不能有动词，只能有名词，而且所用的名词往往与数据库的表格名对应。一般来说，数据库中的表都是同种记录的"集合"（collection），所以API中的名词也应该使用复数。
 
@@ -195,7 +219,51 @@ https://api.example.com/v1/employees
 - ?sortby=name&order=asc：指定返回结果按照哪个属性排序，以及排序顺序。
 - ?animal_type_id=1：指定筛选条件
 
-参数的设计允许存在冗余，即允许API路径和URL参数偶尔有重复。比如，GET /zoo/ID/animals 与 GET /animals?zoo_id=ID 的含义是相同的。
+参数的设计允许存在冗余，即允许API路径和URL参数偶尔有重复。比如，GET /zoo/ID/animals 与 GET /animals?zoo_id=ID 的含义是相同的.
+
+##### 认证
+
+`应该` 使用 `OAuth2.0` 的方式为 API 调用者提供登录认证。`必须` 先通过登录接口获取 `Access Token` 后再通过该 `token` 调用需要身份认证的 `API`。
+
+Oauth 的端点设计示列
+
+- RFC 6749 /token
+- Twitter /oauth2/token
+- Fackbook /oauth/access_token
+- Google /o/oauth2/token
+- Github /login/oauth/access_token
+- Instagram /oauth/authorize
+
+客户端在获得 `access token` 的同时 `必须` 在响应中包含一个名为 `expires_in` 的数据，它表示当前获得的 `token` 会在多少 `秒` 后失效。
+
+```
+{
+    "access_token": "token....",
+    "token_type": "Bearer",
+    "expires_in": 3600
+}
+```
+
+客户端在请求需要认证的 `API` 时，`必须` 在请求头 `Authorization` 中带上 `access_token`。
+
+```
+Authorization: Bearer token...
+```
+
+当超过指定的秒数后，`access token` 就会过期，再次用过期/或无效的 `token` 访问时，服务端 `应该` 返回 `invalid_token` 的错误或 `401` 错误码。
+
+```
+HTTP/1.1 401 Unauthorized
+Content-Type: application/json
+Cache-Control: no-store
+Pragma: no-cache
+
+{
+    "error": "invalid_token"
+}
+```
+
+> Laravel 开发中，`应该` 使用 [JWT](https://github.com/tymondesigns/jwt-auth) 来为管理你的 Token，并且 `一定不可` 在 `api` 中间件中开启请求 `session`。
 
 ##### 状态码
 
