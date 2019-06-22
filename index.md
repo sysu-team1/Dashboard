@@ -11,8 +11,8 @@ layout: default
 * 4、[Vision](04-vision)（项目愿景）
 * 5、[Product Backlog](05-product-backlog)（产品特性库）
 * 6、[Requirement specification](06-requirements)（需求规格说明书）
-    - 6.1 [Usercase Diagram and UML Activity Diagram](06-01-usecase-diagram)
-    - 6.2 [Use Cases](06-02-use-cases)（用例+活动图）
+    - 6.1 [Usercase Diagram and UML Activity Diagram](06-01-usecase-diagram-and-uml-activity-diagram)（用例+活动图）
+    - 6.2 [Use Cases](06-02-use-cases)
     - 6.3 [Domain Models](06-03-domain-model)（领域模型）
     - 6.4 [State Models](06-04-state-model)（状态模型）
     - 6.5 [System Sequence Diagrams](06-05-system-sequence-diagram)（功能模型）
