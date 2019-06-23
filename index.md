@@ -31,9 +31,8 @@ layout: default
     - 8.2 [REST API设计规范](08-02-RESTful-api-design-standard)
     - 8.3 [架构设计、详细设计（BCE方法）到应用程序框架映射指南](08-03-framework-design-BCE-and-app-archit)
     - 8.4 [部署说明](08-04-deployment-doc)
-* 9、成品展示(09-demo-video)
-    - 9.1 [XX短视频]()
-    - 9.2 XX短视频
+* 9、成品展示
+    - 9.1 ['闲余翻身'小程序短视频](09-demo-video)
 * X1 meet_recording
     - [Inception meeting (2019/04/02)](meeting_records/meeting_1)
     - [Iteration 1 meeting (2019/04/11)](meeting_records/meeting_2)
@@ -44,6 +43,9 @@ layout: default
 * X3 [auditing-records](x3-auditing)
 * X4 [Tech/Work Report](x4-techniques)
     - [16340137-定时清理验证码的一种解决方案](https://blog.csdn.net/Runner1st/article/details/93361274)
+    - [16340166-Windows 下 FFmpeg的使用](https://blog.csdn.net/qq_36347365/article/details/93377000)
+    - [16340166-Flask与微信小程序之文件上传与显示](https://blog.csdn.net/qq_36347365/article/details/93404639)
+    - [16340166-ORM与SQLAchemy](https://blog.csdn.net/qq_36347365/article/details/93409925)
     - [16341002-微信小程序wepy生命周期详解](https://blog.csdn.net/qq_36304596/article/details/93399480)
     - [16341002-微信小程序框架快速入门](https://blog.csdn.net/qq_36304596/article/details/93379104)
     - [16341002-微信小程序开发wepy连接服务器](https://blog.csdn.net/qq_36304596/article/details/93380481)
