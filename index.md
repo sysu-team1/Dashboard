@@ -53,5 +53,6 @@ layout: default
     - [16341002-Docker命令集合](https://blog.csdn.net/qq_36304596/article/details/93385161)
 * X5 [Final Report](x5-summary)
     - [16340137-系统设计与分析课程项目个人小结](https://blog.csdn.net/Runner1st/article/details/93359035)
+    - [16340166-系统设计与分析课程项目个人小结](https://blog.csdn.net/qq_36347365/article/details/93423884)
     - [16341002-系统分析与设计课程项目个人总结](16341002-zengh-final-report)
     - 小组分工与贡献率说明
