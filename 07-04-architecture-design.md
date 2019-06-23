@@ -17,9 +17,9 @@ MVC 模式代表 Model-View-Controller（模型-视图-控制器） 模式。这
 
 ### 逻辑视图
 
-![](./images/07-04-architecture-design.png)
+![](https://github.com/sysu-team1/Dashboard/blob/master/images/07-04-architecture-design.PNG?raw=true)
 
 ### 物理视图
 
-![](images/07-04-architecture-design1.png)
+![](https://github.com/sysu-team1/Dashboard/blob/master/images/07-04-architecture-design1.PNG?raw=true)
 
