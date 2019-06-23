@@ -52,7 +52,7 @@ layout: default
     - [16341002-微信小程序wepy自定义card控件封装](https://blog.csdn.net/qq_36304596/article/details/93383821)
     - [16341002-Docker命令集合](https://blog.csdn.net/qq_36304596/article/details/93385161)
     - [16340314-wepy框架使用过程问题记录](https://626zdysdq.github.io/2019/06/22/system_analysis/wepy%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/)
-* X5 [Final Report](x5-summary)
+* X5 [Final Report](x5-group-summary)
     - [16340137-系统设计与分析课程项目个人小结](https://blog.csdn.net/Runner1st/article/details/93359035)
     - [16340166-系统设计与分析课程项目个人小结](https://blog.csdn.net/qq_36347365/article/details/93423884)
     - [16341002-系统分析与设计课程项目个人总结](16341002-zengh-final-report)
