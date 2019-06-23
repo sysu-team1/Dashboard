@@ -26,6 +26,7 @@
 * 利用wx原生部件实现对小程序外部接口的连接
 * 利用wepy实现前端与后端的连接
 ## **PSP2.1表格**
+
 ||Personal Software Process Stages|Time(%)|
 |:-:|:-:|:-:|
 |**Planning**|计划|8|
