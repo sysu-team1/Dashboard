@@ -43,7 +43,7 @@ layout: default
 * X2 [KANBAN](https://github.com/orgs/sysu-team1/projects)
 * X3 [auditing-records](x3-auditing)
 * X4 [Tech/Work Report](x4-techniques)
-    - 学号-title
+    - 16340137-定时清理验证码的一种解决方案(https://blog.csdn.net/Runner1st/article/details/93361274)
 * X5 [Final Report](x5-summary)
-    - 学号-title
+    - 16340137-系统设计与分析课程项目个人小结(https://blog.csdn.net/Runner1st/article/details/93359035)
     - 小组分工与贡献率说明
