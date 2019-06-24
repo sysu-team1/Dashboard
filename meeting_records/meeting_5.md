@@ -1,8 +1,20 @@
-## 获取任务
+# 第五次小组讨论会议记录
+
+
+### 时间：2019年6月10号
+
+### 地点：至善园学生活动中心
+
+### 参会人员：曾晖 马佳 廖志勇 梁毓颖 朱多煜 廖三锋
+
+### 会议目标：api完善已经进行文档任务的分配
+
+### 会议内容：
+
+##### 获取任务
 * url: /tasks/search/
 * method: GET
 * request:
-
 
 
 | 参数名   | 必选   | 类型   | 说明   |
@@ -17,30 +29,37 @@
 | last_accept_time   | 否   | string   | 格式："2019-06-05 22:02:24"  当前显示的接受任务列表中最晚的接受时间，若一个任务都还没有，则传入空字符串，与accepter_id搭配使用。作用类似last_id   |
 
 
-
-参数说明：
-  * publisher_id，accepter_id，tag，text，task_id 最多只能选一个
-  * 选择 publisher_id，tag，text 作为参数时，或者没有参数时，必须加 last_id 作为参数
+>* 参数说明：
+>  * publisher_id，accepter_id，tag，text，task_id 最多只能选一个
+>  * 选择 publisher_id，tag，text 作为参数时，或者没有参数时，必须加 last_id 作为参数
+>  
 ```
 http://localhost:5000/tasks/search/?tag=取快递&last_id=-1
 http://localhost:5000/tasks/search/?last_id=-1
 ```
-  * 选择 publisher_id 或 accepter_id 作为参数时，必须加 status 作为参数
+>
+>  * 选择 publisher_id 或 accepter_id 作为参数时，必须加 status 作为参数
+>  
 ```
 http://localhost:5000/tasks/search/?publisher_id=1000003&status=all&last_id=-1
 ```
-  * 选择 accepter_id 作为参数时，必须加 last_accept_time 作为参数
+>
+>  * 选择 accepter_id 作为参数时，必须加 last_accept_time 作为参数
+>  
 ```
 http://localhost:5000/tasks/search/?accepter_id=1000002&status=all&last_accept_time=2019-06-11 23:01:53
-
 http://localhost:5000/tasks/search/?accepter_id=1000002&status=ongoing&last_accept_time=
 ```
-  * 选择 task_id 作为参数时，无需加其他参数
+>
+>  * 选择 task_id 作为参数时，无需加其他参数
+> 
 ```
 http://localhost:5000/tasks/search/?task_id=1
 ```
+>
 
 * response:
+
 ```
 {
   "error": 0,
@@ -69,13 +88,12 @@ http://localhost:5000/tasks/search/?task_id=1
   }
 }
 ```
-## 更新用户信息
+
+##### 更新用户信息
 * url: /user/update/
 * method: POST
 * request:
-
-body:
-
+	* body:
 
 | 参数名 | 必选 | 类型 | 说明 |
 |:----|:----|:----|:----|
@@ -85,16 +103,18 @@ body:
 | ...   | 否   | -   | 属性名作为参数名   |
 | old_password   | 否   | string   | 当修改密码时，需要传入旧密码   |
 
-
-
-参数说明：
-  * attr_name可以为以下任意一个以上，个数不限
+> 参数说明：
+> 
+>  * attr_name可以为以下任意一个以上，个数不限
+> 
 ```
 {"password": "pass3", "student_id": "16340003", "name": "16340003", "sex": "男", "collage": "药学院", "grade": 2014, "edu_bg": "本科", "signature": "word12 word13 word14 word15 word16 word17 word18 word19 word20 word21 word22"}
 ```
-  * 若要修改password，则要加一个old_password属性
+>
+>  * 若要修改password，则要加一个old_password属性
 
 * response:
+
 ```
 {"error": 0, "data": {"msg": "更改成功"}}
 {"error": 1, "data": {"msg": "不存在该学生或组织"}}
@@ -103,8 +123,7 @@ body:
 {'error': 1, "data": {'msg': '邮箱不可修改'}}
 ```
 
-
-## **文档分工**
+##### **文档分工**
 **1、[About](01-about)（项目概况）（曾晖）**
 
 **2、[Team profile](02-team-profile)（团队组建与分工）**
@@ -186,12 +205,12 @@ body:
 
 | 成员   | 文档   |
 |:----|:----|:----:|
-| 廖志勇   | 06-04-state-model  07-03-API  08-03-framework-design-BCE-and-app-archit   |
-| 廖三锋   | 07-04-architecture-design  08-02-RESTful-api-design-standard   |
-| 梁毓颖   | 06-03-domain-model  07-02-01-database-design   |
-| 马佳   | 03-investigation  06-01-usecase-diagram-and-uml-activity-diagram  06-02-use-cases  07-03-API  07-05  08-04-deployment-doc   |
-| 曾晖   | 01-about  06-01-usecase-diagram-and-uml-activity-diagram  06-02-use-cases  06-06-supplementary-requirements  09-demo-video（视频录制）  x5-summary（小组总结）   |
-| 多鱼   | 04-vision  05-product-backlog  06-05-system-sequence-diagram  07-01-01-XX-ui-design   |
+| 廖志勇   | 06-04-state-model <br> 07-03-API <br> 08-03-framework-design-BCE-and-app-archit   |
+| 廖三锋   | 07-04-architecture-design <br> 08-02-RESTful-api-design-standard   |
+| 梁毓颖   | 06-03-domain-model <br> 07-02-01-database-design   |
+| 马佳   | 03-investigation <br> 06-01-usecase-diagram-and-uml-activity-diagram <br> 06-02-use-cases <br> 07-03-API  07-05  08-04-deployment-doc   |
+| 曾晖   | 01-about <br> 06-01-usecase-diagram-and-uml-activity-diagram <br> 06-02-use-cases <br> 06-06-supplementary-requirements <br> 09-demo-video（视频录制）<br>  x5-summary（小组总结）   |
+| 多鱼   | 04-vision <br> 05-product-backlog <br> 06-05-system-sequence-diagram <br> 07-01-01-XX-ui-design   |
 
 
 文档编写可参考：[https://rookies-sysu.github.io/Dashboard/](https://rookies-sysu.github.io/Dashboard/)

@@ -1,7 +1,21 @@
-# 注册功能
+# 第三次小组讨论会议记录
+
+
+### 时间：2019年5月24号
+
+### 地点：至善园学生活动中心
+
+### 参会人员：曾晖 马佳 廖志勇 梁毓颖 朱多煜 廖三锋
+
+### 会议目标：针对已实现的部分功能进行前后对数据格式的对接，对后端进行详细的任务分工
+
+### 会议内容：
+
+##### 注册功能
   * url: /user/register
   * method: POST
   * request:
+  
 ```
 String email
 String password
@@ -13,6 +27,7 @@ String major
 String sex
 ```
   * response:
+  
 ```
 {
   "error": 0,
@@ -22,15 +37,19 @@ String sex
   }
 }
 ```
-# 登录功能
+
+##### 登录功能
   * url: /user/login
   * method: POST
   * request:
+  
 ```
 String email
 String password
 ```
+
   * response:
+
 ```
 {
   "error": 0,
@@ -39,12 +58,12 @@ String password
     id:
   }
 ```
-# }
 
-发问卷功能
+##### 发问卷功能
   * url: /user/questpaper
   * method: POST
   * request:
+  
 ```
 String id
 String quest_name
@@ -53,7 +72,9 @@ String deadline_date
 String people_type//面向的对象
 String paticipate_number//参与人数限制
 ```
+
   * response
+
 ```
 {
   "error": 0,
@@ -62,13 +83,12 @@ String paticipate_number//参与人数限制
     id:  //问卷id
   }
 ```
-}
 
-
-# 填问卷功能
+##### 填问卷功能
   * url: /user/fillpaper
   * method: POST
   * request:
+
 ```
 String id
 String quest_name
@@ -76,12 +96,15 @@ String deadline_date
 String people_type//面向的对象
 String paticipate_number//参与人数限制
 ```
+
   * response
-```
 
 ```
 
-# 后台文件目录
+```
+
+##### 后台文件目录
+
 ```
 tools/
     utils.py  # 邮件

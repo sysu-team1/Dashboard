@@ -1,12 +1,29 @@
-# 登录
+# 第四次小组讨论会议记录
+
+
+### 时间：2019年5月31号
+
+### 地点：至善园学生活动中心
+
+### 参会人员：曾晖 马佳 廖志勇 梁毓颖 朱多煜 廖三锋
+
+### 会议目标：根据前端的需求进一步补充和完善api
+
+### 会议内容：
+
+##### 登录
+
   * url: /user/login/
   * method: POST
   * request:
+
 ```
 String email
 String password
 ```
+
   * response:
+ 
 ```
 {
   "error": 0,
@@ -15,11 +32,14 @@ String password
   }
 }
 ```
+
 ![图片](https://uploader.shimo.im/f/wDOuTQcOVpodAVut.png!thumbnail)
-# 注册
+
+##### 注册
   * url: /user/register/
   * method: POST
   * request:
+
 ```
 String email
 String password
@@ -30,7 +50,9 @@ String grade
 String collage
 String sex
 ```
+
   * response:
+
 ```
 {
   "error": 0,
@@ -42,14 +64,19 @@ String sex
 ```
 
 ![图片](https://uploader.shimo.im/f/aXdmN3cGOwYcuRPZ.png!thumbnail)
-# 验证码
+
+##### 验证码
+
   * url: /user/get_verification_code/
   * method: POST
   * request:
+  
 ```
 String email
 ```
+
   * response:
+
 ```
 {
   "error": 0/1,
@@ -58,12 +85,16 @@ String email
   }
 }
 ```
+
 ![图片](https://uploader.shimo.im/f/KyipO4R9FG4h1R20.png!thumbnail)
-# 创建任务
+
+##### 创建任务
+
   * url: /tasks/create/
   * method: POST
   * request:
     * body:
+
 ```
 publish_id, 发布人id ，也就是open_id
 limit_time, ddl
@@ -73,18 +104,23 @@ content, 内容（如果tag为'问卷'，则内容为问卷的内容）
 tag, 标签
 reward
 ```
+
   * response:
+
 ```
 "error": 0/1,
 "data": {
   "msg": "余额不足/创建成功/没有图片上传/创建成功/图片上传失败",
 }
 ```
-# 搜索任务
+
+##### 搜索任务
+
   * url: /tasks/search/?
   * method: GET
   * request:
     * 参数：
+
 ```
 （publisher_id = 
 或 accepter_id = 
@@ -94,11 +130,13 @@ reward
 last_id = ? # last_id是当前显示的任务列表最老的那个task id，用来获取下滑获取更多task，若一个任务都还没有，则传入-1。（用task_id查询时不用传入last_id）
 
 ```
+
 如：
 /tasks/search/?accepter_id=10001&last_id=-1
 /tasks/search/?task_id=10002
 
   * response:
+
 ```
 {
   "error": 0,
@@ -127,16 +165,21 @@ last_id = ? # last_id是当前显示的任务列表最老的那个task id，用�
   }
 }
 ```
+
 # 接受任务
+
   * url: /tasks/accept/
   * method: POST
   * request:
     * body:
+
 ```
 int accepter_id
 int task_id
 ```
+
   * response
+
 ```
 {'error': 0/1,
 'data': {
@@ -145,12 +188,15 @@ int task_id
 }
 ```
 
--------------分割线----------------
-没有以下API
-# 发问卷
+-----------------------------
+>* 没有以下API
+
+##### 发问卷
+
   * url: /user/questpaper
   * method: POST
   * request:
+
 ```
 String id
 String quest_name
@@ -159,7 +205,9 @@ String deadline_date
 String people_type//面向的对象
 String paticipate_number//参与人数限制
 ```
+
   * response
+
 ```
 {
   "error": 0,
@@ -171,10 +219,12 @@ String paticipate_number//参与人数限制
 
 ```
 
-# 填问卷功能
+##### 填问卷功能
+
   * url: /user/fillpaper
   * method: POST
   * request:
+
 ```
 String id
 String quest_name
@@ -182,32 +232,39 @@ String deadline_date
 String people_type//面向的对象
 String paticipate_number//参与人数限制
 ```
+
   * response
-```
 
 ```
 
-# 请求任务列表
-说明：请求任务是请求平台中的所有可以接受的任务，用于用户筛选
+```
+
+##### 请求任务列表
+>* 说明：请求任务是请求平台中的所有可以接受的任务，用于用户筛选
+
   * url: ？
   * method: POST
   * request:
+  
 ```
 String id // 用户openid
 ```
 
   * response
 
-# 请求我的任务列表
-说明：请求我的任务是请求该用户id的所有任务任务，包括已完成和未完成
+##### 请求我的任务列表
+>* 说明：请求我的任务是请求该用户id的所有任务任务，包括已完成和未完成
+
   * url: ？
   * method: POST
   * request:
+ 
 ```
 String id // 用户openid
 ```
 
   * response
+
 ```
 Strign title   // 任务标题 
 number reward // 奖励
