@@ -52,9 +52,13 @@ layout: default
     - [16341002-微信小程序wepy自定义card控件封装](https://blog.csdn.net/qq_36304596/article/details/93383821)
     - [16341002-Docker命令集合](https://blog.csdn.net/qq_36304596/article/details/93385161)
     - [16340314-wepy框架使用过程问题记录](https://626zdysdq.github.io/2019/06/22/system_analysis/wepy%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/)
+    - [16340134-MySQL常用指令(粗制滥造版)](https://blog.csdn.net/m0_37782473/article/details/93419468)
+    - [16340134-Python Flask 快速入门](https://blog.csdn.net/m0_37782473/article/details/93420295)
+    - [16340134-Python flaskalchemy 笔记(极致简化版)](https://blog.csdn.net/m0_37782473/article/details/93421168)
 * X5 [Final Report](x5-group-summary)
     - [16340137-系统设计与分析课程项目个人小结](https://blog.csdn.net/Runner1st/article/details/93359035)
     - [16340166-系统设计与分析课程项目个人小结](https://blog.csdn.net/qq_36347365/article/details/93423884)
     - [16341002-系统分析与设计课程项目个人总结](16341002-zengh-final-report)
     - [16340314-系统分析与设计课程项目个人总结](https://626zdysdq.github.io/2019/06/21/system_analysis/16340314-%E5%A4%9A%E9%B1%BC-Final-Report/)
+    - [16340134-系统分析与设计课程项目个人总结](16340134-liangyuyin-final-report.md)
     - 小组分工与贡献率说明
