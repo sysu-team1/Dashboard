@@ -13,6 +13,7 @@
 
 ## 部署
 - [16341002-Docker命令集合](https://blog.csdn.net/qq_36304596/article/details/93385161)
+- [16340166-ssh端口映射](https://mj-love-life.github.io/blog/ssh%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84)
 
 ## 前端
 - [16340136-ES6新特性](https://blog.csdn.net/qq_36297981/article/details/93418205)
