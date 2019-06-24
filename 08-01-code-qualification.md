@@ -3,7 +3,6 @@
 - [代码规范和设计说明](#代码规范和设计说明)
     - [python语言设计规范](#python语言设计规范)
     - [微信小程序界面设计规范](#微信小程序界面设计规范)
-    - [其他规范](#其他规范)
 
 <!-- /TOC -->
 # 代码规范和设计说明
@@ -13,6 +12,24 @@
 
 
 ## 微信小程序界面设计规范
+
+
+1.变量与方法尽量使用驼峰式命名，并且注意避免使用 **$** 开头。 以 **$** 开头的标识符为**WePY**框架的内建属性和方法，可在**JavaScript**脚本中以 **this.** 的方式直接使用。具体请参考[API文档](https://tencent.github.io/wepy/document.html#/api?id=api)。
+
+2.小程序入口、页面、组件文件名的后缀为.wpy；外链的文件可以是其它后缀
+使用ES6语法开发。 框架在ES6(ECMAScript 6)下开发，因此也需要使用ES6开发小程序，ES6中有大量的语法糖可以让我们的代码更加简洁高效。
+
+3.使用Promise。 框架默认对小程序提供的API全都进行了 Promise 处理，甚至可以直接使用async/await等新特性进行开发。
+
+4.事件绑定语法使用优化语法代替。
+    
+    * 原 ```bindtap="click"``` 替换为 ```@tap="click"```，原```catchtap="click"```替换为```@tap.stop="click"```。
+    * 原 ```capture-bind:tap="click"``` 替换为 ```@tap.capture="click"```，原```capture-catch:tap="click"```替换为```@tap.capture.stop="click"。```
+5.事件传参使用优化后语法代替。 原```bindtap="click" data-index={{index}}```替换为```@tap="click({{index}})"```。
+
+6.自定义组件命名应避开微信原生组件名称以及功能标签<repeat>。 不可以使用input、button、view、repeat等微信小程序原生组件名称命名自定义组件；另外也不要使用WePY框架定义的辅助标签repeat命名。有关repeat的详细信息，请参见循环列表组件引用。
+
+
 <div class="entry-content l-h-2x">
 <center style="font-size: 12px;border-left: 4px solid #ff6225;background-color: #f1f1f1;border-bottom-right-radius: 2px;color: #3a3f51;margin: 1.6em -31px;">
 </center> 
@@ -171,21 +188,3 @@ _<span class="hljs-selector-tag"><span class="hljs-selector-tag">self</span></sp
 <p>1. JS语句无需以分号结束，统一省略分号<br>2. JS中一致使用反引号 ``或单引号' ' , 不使用双引号。<br>3. WXML、CSS、JSON中均应使用双引号。<br>4. CSS属性中冒号中后面用一个空格分隔开。<br>5. 执行一致的缩进（4个空格）<br>6. 执行一致的换行样式（'unix'）</p>
 <hr>
 <div name="其他规范" data-unique="其他规范"></div>
-
-
-## 其他规范 
-
-1.变量与方法尽量使用驼峰式命名，并且注意避免使用 **$** 开头。 以 **$** 开头的标识符为**WePY**框架的内建属性和方法，可在**JavaScript**脚本中以 **this.** 的方式直接使用。具体请参考[API文档](https://tencent.github.io/wepy/document.html#/api?id=api)。
-
-2.小程序入口、页面、组件文件名的后缀为.wpy；外链的文件可以是其它后缀
-使用ES6语法开发。 框架在ES6(ECMAScript 6)下开发，因此也需要使用ES6开发小程序，ES6中有大量的语法糖可以让我们的代码更加简洁高效。
-
-3.使用Promise。 框架默认对小程序提供的API全都进行了 Promise 处理，甚至可以直接使用async/await等新特性进行开发。
-
-4.事件绑定语法使用优化语法代替。
-    
-    * 原 ```bindtap="click"``` 替换为 ```@tap="click"```，原```catchtap="click"```替换为```@tap.stop="click"```。
-    * 原 ```capture-bind:tap="click"``` 替换为 ```@tap.capture="click"```，原```capture-catch:tap="click"```替换为```@tap.capture.stop="click"。```
-5.事件传参使用优化后语法代替。 原```bindtap="click" data-index={{index}}```替换为```@tap="click({{index}})"```。
-
-6.自定义组件命名应避开微信原生组件名称以及功能标签<repeat>。 不可以使用input、button、view、repeat等微信小程序原生组件名称命名自定义组件；另外也不要使用WePY框架定义的辅助标签repeat命名。有关repeat的详细信息，请参见循环列表组件引用。
