@@ -25,6 +25,7 @@
 ## 后端
 - [16340137-定时清理验证码的一种解决方案](https://blog.csdn.net/Runner1st/article/details/93361274)
 - [16340166-ORM与SQLAchemy](https://blog.csdn.net/qq_36347365/article/details/93409925)
+- [16340166-SMTP邮件推送以及验证码](https://blog.csdn.net/qq_36347365/article/details/93532730)
 - [16340134-MySQL常用指令(粗制滥造版)](https://blog.csdn.net/m0_37782473/article/details/93419468)
 - [16340134-Python Flask 快速入门](https://blog.csdn.net/m0_37782473/article/details/93420295)
 - [16340134-Python flaskalchemy 笔记(极致简化版)](https://blog.csdn.net/m0_37782473/article/details/93421168)
