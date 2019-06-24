@@ -55,10 +55,12 @@ layout: default
     - [16340134-MySQL常用指令(粗制滥造版)](https://blog.csdn.net/m0_37782473/article/details/93419468)
     - [16340134-Python Flask 快速入门](https://blog.csdn.net/m0_37782473/article/details/93420295)
     - [16340134-Python flaskalchemy 笔记(极致简化版)](https://blog.csdn.net/m0_37782473/article/details/93421168)
+    - [16340136-ES6新特性](https://blog.csdn.net/qq_36297981/article/details/93418205)
 * X5 [Final Report](x5-group-summary)
     - [16340137-系统设计与分析课程项目个人小结](https://blog.csdn.net/Runner1st/article/details/93359035)
     - [16340166-系统设计与分析课程项目个人小结](https://blog.csdn.net/qq_36347365/article/details/93423884)
     - [16341002-系统分析与设计课程项目个人总结](16341002-zengh-final-report)
     - [16340314-系统分析与设计课程项目个人总结](https://626zdysdq.github.io/2019/06/21/system_analysis/16340314-%E5%A4%9A%E9%B1%BC-Final-Report/)
     - [16340134-系统分析与设计课程项目个人总结](16340134-liangyuyin-final-report.md)
+    - [16340136-系统设计与分析课程项目个人总结](16340136-liaosf-final-report.md)
     - 小组分工与贡献率说明
