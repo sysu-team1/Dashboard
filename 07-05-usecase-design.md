@@ -1,17 +1,13 @@
 <!-- TOC -->
 
 - [BCE 用例设计](#bce-用例设计)
-    - [用例图如下](#用例图如下)
-    - [Usecase](#usecase)
-    - [Customer](#customer)
-        - [Class](#class)
-        - [Scan](#scan)
-        - [Order](#order)
-    - [Restaurant](#restaurant)
-        - [class](#class)
-        - [sequence](#sequence)
+    - [用例简介](#用例简介)
+    - [识别出来的BCE类别有如下这些：](#识别出来的bce类别有如下这些)
+    - [时序图](#时序图)
+    - [类图](#类图)
 
 <!-- /TOC -->
+
 # BCE 用例设计
 
 
@@ -32,7 +28,10 @@
   - Task：任务清单类
   - Feedback：用户完成任务时的提交类
 
-## Usecase
+## 时序图
 
-![1561370265372](assets/1561370265372.png)
+![1561371753103](assets/1561371753103.png)
 
+## 类图
+
+![1561371641610](assets/1561371641610.png)
