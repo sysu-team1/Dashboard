@@ -37,7 +37,7 @@
 ### 查看任务详细信息
 ![查看任务详细信息](assets/1561395837701.png)
 ### 领取任务
-![领取任务]()
+![领取任务](assets/acceptTask.jpg)
 ### 完成任务（提交验证信息）
 ![完成任务](images/06-05-system-sequence-diagram-05.png)
 ### 查看与统计问卷详情
