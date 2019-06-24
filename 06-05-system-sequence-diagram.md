@@ -31,7 +31,7 @@
 ## 系统顺序图
 
 ### 发布任务（多类型）
-![发布任务]()
+![发布任务](https://github.com/sysu-team1/Dashboard/blob/master/images/06-05-01.PNG?raw=true)
 ### 获取与浏览任务列表
 ![获取与浏览任务列表]()
 ### 查看任务详细信息
