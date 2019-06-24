@@ -37,11 +37,11 @@
 
 #### ClientUI
 
-![](images/sanfeng1.png)
+![](https://github.com/sysu-team1/Dashboard/blob/master/images/sanfeng1.PNG?raw=true)
 
 #### DashBoard
 
-![](images/2.png)
+![](https://github.com/sysu-team1/Dashboard/blob/master/images/2.PNG?raw=true)
 
 ### 自认为最得意/或有价值/或有苦劳的工作清单
 
