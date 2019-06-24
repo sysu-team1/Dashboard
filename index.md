@@ -36,9 +36,9 @@ layout: default
 * X1 meet_recording
     - [Inception meeting (2019/04/02)](meeting_records/meeting_1)
     - [Iteration 1 meeting (2019/04/11)](meeting_records/meeting_2)
-    - [Iteration 2 meeting (2019/04/22)](https://shimo.im/docs/mdPkpKOl2JDSXqOy)
-    - [Iteration 3 meeting (2019/05/20)](https://shimo.im/docs/lRKAWVRyOXWh8k8X)
-    - [Iteration 4 meeting (2019/06/10)](https://shimo.im/docs/MEe32MwL1W7sLA2J)
+    - [Iteration 2 meeting (2019/04/22)](meeting_records/meeting_3)
+    - [Iteration 3 meeting (2019/05/20)](meeting_records/meeting_4)
+    - [Iteration 4 meeting (2019/06/10)](meeting_records/meeting_5)
 * X2 [KANBAN](https://github.com/orgs/sysu-team1/projects)
 * X3 [auditing-records](x3-auditing)
 * X4 [Tech/Work Report](x4-techniques)

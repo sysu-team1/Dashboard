@@ -2,6 +2,9 @@
 * url: /tasks/search/
 * method: GET
 * request:
+
+
+
 | 参数名   | 必选   | 类型   | 说明   |
 |:----|:----|:----|:----|
 | publisher_id   | 否   | int   | 发布者id   |
@@ -12,6 +15,8 @@
 | last_id   | 否   | int   | 当前显示的任务列表最老的那个task id，用来获取下滑获取更多task，若一个任务都还没有，则传入-1   |
 | status   | 否   | string   | 任务状态，与accepter_id搭配使用。(1) all: 所有的任务  (2) ongoing: 进行中，未完成，未过期(3) finished: 已完成(4) complete: 未完成，已过期（只与接受的任务搭配） |
 | last_accept_time   | 否   | string   | 格式："2019-06-05 22:02:24"  当前显示的接受任务列表中最晚的接受时间，若一个任务都还没有，则传入空字符串，与accepter_id搭配使用。作用类似last_id   |
+
+
 
 参数说明：
   * publisher_id，accepter_id，tag，text，task_id 最多只能选一个
@@ -70,6 +75,8 @@ http://localhost:5000/tasks/search/?task_id=1
 * request:
 
 body:
+
+
 | 参数名 | 必选 | 类型 | 说明 |
 |:----|:----|:----|:----|
 | openid   | 是   | int   | 学生或组织id   |
@@ -77,6 +84,8 @@ body:
 | <attr_name>   | 否   | -   | 属性名作为参数名   |
 | ...   | 否   | -   | 属性名作为参数名   |
 | old_password   | 否   | string   | 当修改密码时，需要传入旧密码   |
+
+
 
 参数说明：
   * attr_name可以为以下任意一个以上，个数不限
@@ -93,45 +102,87 @@ body:
 {'error': 1, "data": {'msg': '旧密码错误'}}
 {'error': 1, "data": {'msg': '邮箱不可修改'}}
 ```
+
+
 ## **文档分工**
 **1、[About](01-about)（项目概况）（曾晖）**
+
 **2、[Team profile](02-team-profile)（团队组建与分工）**
+
 **3、[Investigation](03-investigation)（项目前期调研/竞品分析）（马佳）**
+
 **4、[Vision](04-vision)（项目愿景）（多鱼）**
+
 **5、[Product Backlog](05-product-backlog)（产品特性库）（多鱼）**
+
 **6、[Requirement specification](06-requirements)（需求规格说明书）**
+
      - 6.1 [Usercase Diagram and UML Activity Diagram](06-01-usecase-diagram-and-uml-activity-diagram)（马佳、曾晖）
+
      - 6.2 [Use Cases](06-02-use-cases)（用例+活动图）（马佳、曾晖）
+
      - 6.3 [Domain Models](06-03-domain-model)（领域模型）（毓颖）
+ 
      - 6.4 [State Models](06-04-state-model)（状态模型）（志勇）
+ 
      - 6.5 [System Sequence Diagrams](06-05-system-sequence-diagram)（功能模型）（多鱼 ）
+ 
      - 6.6 [Supplementary Requirements](06-06-supplementary-requirements)（补充需求）（曾晖）
+
 **7、[Design](07-designs)（设计说明书）**
+
      - 7.1 UI design（界面设计）
+
           - [XX 用例 UI 设计](07-01-01-XX-ui-design)（多鱼）
+
      - 7.2 Database design（数据库设计）
-          - 7.2.1 [用户及权限系统数据库设计](07-02-01-database-design)（毓颖）
+
+        - 7.2.1 [用户及权限系统数据库设计](07-02-01-database-design)（毓颖）
+
           - 7.2.2 [数据库ER模型图](07-02-02-database-er-model)（毓颖）
+
      - 7.3 [Interface API design](07-03-API)（接口 API 设计）
+
      - 7.4 [Architecture design](07-04-architecture-design)（架构设计）（三锋）
+
      - 7.5 [Usecase design](07-05-usecase-design)（用例设计）（ 马佳 ）
+
 **8、生产规范与指南**
+
     - 8.1 [代码规范](08-01-code-qualification)（曾晖）
+
      - 8.2 [REST API设计规范](08-02-RESTful-api-design-standard)（三锋）
-     - 8.3 [架构设计、详细设计（BCE方法）到应用程序框架映射指南](08-03-framework-design-BCE-and-app-archit)（志勇）
+
+     - 8.3 [架构设计、详细设计（BCE方法）到应用程序框架映射指南]
+ (08-03-framework-design-BCE-and-app-archit)（志勇）
+ 
      - 8.4 [部署说明](08-04-deployment-doc)
-**9、[成品展示](09-demo-video)（曾晖）**
+*
+*9、[成品展示](09-demo-video)（曾晖）**
+
      - 9.1 XX短视频（马佳 ）
+
 **X1 meet_recording（已完成）**
+
       - [Inception meeting (2019/04/02)]
+
      - [Iteration 1 meeting (2019/04/11)]
+
      - [Iteration 2 meeting (2019/04/22)]
+
      - [Iteration 3 meeting (2019/05/20)]
+
      - [Iteration 4 meeting (2019/06/10)]
+
 **X2 [KANBAN]**
+
 **X3 [auditing-records](x3-auditing)**
+
 **X4 [Tech/Work Report](x4-techniques)**
+
 **X5 [Final Report](x5-summary)（曾晖）**
+
+
 
 | 成员   | 文档   |
 |:----|:----|:----:|
@@ -141,6 +192,7 @@ body:
 | 马佳   | 03-investigation  06-01-usecase-diagram-and-uml-activity-diagram  06-02-use-cases  07-03-API  07-05  08-04-deployment-doc   |
 | 曾晖   | 01-about  06-01-usecase-diagram-and-uml-activity-diagram  06-02-use-cases  06-06-supplementary-requirements  09-demo-video（视频录制）  x5-summary（小组总结）   |
 | 多鱼   | 04-vision  05-product-backlog  06-05-system-sequence-diagram  07-01-01-XX-ui-design   |
+
 
 文档编写可参考：[https://rookies-sysu.github.io/Dashboard/](https://rookies-sysu.github.io/Dashboard/)
 
